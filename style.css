@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+  }
+body
+{
+    font-family: 'Google Sans';
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    cursor: default;
+    height:100vh;
+}
+table{
+    border-collapse: collapse;
+}
+div{
+    transition: height 2s;
+}
+p {
+    font-size: 22px;
+    line-height: 1.5;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+.img-profile
+{
+    position:relative;
+    margin: auto;
+    display: block;
+    top: 15%;
+    width: 700px;
+}
+
+h1
+{
+    font-size: 70px;
+    font-style: bold;
+    line-height: 1.5;
+}
+.hover-me:hover
+{
+    font-size: 73px;
+    transition: 0.3s;
+}
+h4
+{
+    font-size: 26px;
+    line-height: 1.5;
+}
+.convo-style
+{
+    background-color: #FFFFFF;
+    padding:24px;
+    width: 350px;
+    border-radius: 25px;
+    color:#828282;
+}
+
+
+.bumble-div
+{
+    background-image: url("https://ai7ru.wordpress.com/wp-content/uploads/2024/05/vector.png?resize=438%2C438");
+    background-repeat: no-repeat;
+    background-color: #FFC629;
+    height:90vh;
+    width: 100vw;
+    margin: auto;
+}
+
+.left-div
+{
+    width: 50%;
+    float: left;
+}
+.right-div
+{
+    position:relative;
+    width: 50%;
+    float: right;
+}
+
+.hover-me:hover span {
+    display: none
+}
+
+.hover-me:hover:before
+{
+    content: "Ash, 21, QC";
+    transition: 0.1s;
+}
+
+.text-column
+{
+    height: 100vh;
+}
+.desktop-button
+{
+    text-align: center;
+    height:10vh;
+    width: 100vw;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); } /* Bounce up at 40% */
+    60% { transform: translateY(-15px); } /* Slight bounce down at 60% */
+  }
+  
+  
+  .arrow-down {
+    width: 100px;
+    animation: bounce 2s linear infinite; /* Animation name, duration, timing, count */
+  }
+  .arrow-down:hover
+  {
+    cursor:pointer;
+    animation:none;
+  }
+
+
+.page2-div
+{
+    background-repeat: no-repeat;
+    background-color: #0e0e0e;
+    height:90vh;
+    width: 100vw;
+    margin: auto;
+    color:#7289DA;
+}
+
+.page3-div
+{
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    height:90vh;
+    width: 100vw;
+    margin: auto;
+    color:#000000;
+}
+
+tr td{
+    padding: 24px;
+}
+.box-layout
+{
+    border: 2px solid #7289DA;
+    padding: 24px;
+    border-radius: 25px;
+}
+.lazyload {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Add smooth transition */
+  }
+
+.shine {
+    position: relative; /* Required for pseudo-element positioning */
+    overflow: hidden; /* Prevent overflowing content */
+}
+
+.shine::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Inset property for full coverage */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
+    animation: shine 3s infinite; /* Animation details */
+}
+
+@keyframes shine {
+    from {
+        transform: translateX(-100%); /* Start from left side */
+    }
+    to {
+        transform: translateX(100%); /* Move to the right side */
+        font-style: italic;
+    }
+}
+
+.fadeIn {
+    opacity: 0; /* Initially invisible */
+    animation: fadeIn ease-in 0.5s forwards; /* Animation properties */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.paper-plane-container {
+    position: relative; /* Needed for absolute positioning of the plane */
+  }
+  
+  .paper-plane {
+    position: absolute;
+    top: 450px; /* Adjust as needed for starting position */
+    left: 850px; /* Adjust as needed for starting position */
+    width: 30px;
+    animation: flyingPaperPlane 1s ease-in-out infinite;
+  }
+  
+  @keyframes flyingPaperPlane {
+        0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
+        40% { transform: translateX(-90px); } /* Bounce up at 40% */
+        60% { transform: translateX(-50px); } /* Slight bounce down at 60% */
+      }
+
+  .with-border tr td
+  {
+    height: 10px;
+    line-height: 0;
+    border: 1px solid pink;
+  }
+  .with-border td
+  {
+    width: 25px;
+  }
+  .with-border  td:hover
+  {
+    background-color: pink;
+  }
+  
+
+  .fillIt
+  {
+    background-color: pink;
+  }
+
+  #popup {
+    display: none; /* Hide the popup initially */
+    position: fixed; /* Ensures the popup stays on top of other content */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    width: 500px; /* Set desired width */
+    height: 300px; /* Set desired height */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10; /* Ensure the popup appears above other elements */
+    font-family: "Indie Flower", cursive;
+    overflow-y: auto;
+    transition: displayPopUp 1s ease-in;
+  }
+
+  @keyframes displayPopUp {
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+  }
+
+
+  #openPopup
+  {
+    background-image: url("https://ai7ru.wordpress.com/wp-content/uploads/2024/05/fluent-emoji-high-contrast_love-letter.png?resize=438%2C438");
+    background-size: 100%;
+  }
